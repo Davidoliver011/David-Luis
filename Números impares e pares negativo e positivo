@@ -1,6 +1,7 @@
 
 for i in range(5):
     num = int(input("Número: "))
-    paridade = "par" if num % 2 == 0 else "ímpar"
+    paridade = "par" if num % 2 == 0 and num != 0 else "ímpar" if num % 2 != 0 else "neutro"
     sinal = "positivo" if num > 0 else "negativo" if num < 0 else "zero"
     print(f"{num} é {paridade} e {sinal}.")
+
